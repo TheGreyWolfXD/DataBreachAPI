@@ -24,7 +24,7 @@ def chkBreachpCloud(email):
     #pCloud
     api="https://eapi.pcloud.com/checkpwned?checkemail="
     try:
-        r=requests.get(api+email, headers=h)
+        r=requests.get(api+email, headers=h, timeout=7)
         print(r.json())
         if r.json().get("result")==0:
             data=r.json().get("data")
