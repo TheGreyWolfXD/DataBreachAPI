@@ -61,4 +61,4 @@ def breachCheck():
     return jsonify(status=False, data=None, message="Something Went Wrong.")
 
 if __name__=="__main__":
-    app.run(debug=True, host="0.0.0.0", threaded=True)
+    app.run(debug=False, host="0.0.0.0", threaded=True)
