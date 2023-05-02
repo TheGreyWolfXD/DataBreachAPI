@@ -58,7 +58,8 @@ def breachCheck():
     status, data=chkBreachpCloud(email)
     if status:
         return jsonify(status=status, data=data, message="Success.")
-    return jsonify(status=False, data=None, message="Something Went Wrong.")
+    return jsonify(status=False, data=None, message="No records found.")
+   # return jsonify(status=False, data=None, message="Something Went Wrong.")
 
 if __name__=="__main__":
     app.run(debug=False, host="0.0.0.0", threaded=True)
