@@ -4,7 +4,7 @@ from flask import *
 
 
 app=Flask(__name__)
-app.secret_key="haVaiThikHaiGaandMara"
+app.secret_key="AnyRandomSecretXD"
 
 
 
@@ -18,7 +18,7 @@ def isEmail(email):
 
 
 
-h={"user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"}
+h = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"}
 
 def chkBreachpCloud(email):
     #pCloud
